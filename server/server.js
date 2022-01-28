@@ -26,6 +26,22 @@ app.get('/caka', (req, res) => {
     })
 })
 
+app.get('/caka2', (req, res) => {
+    res.json({
+        msg: 'Hola2 mundo',
+        port: process.env.PORT,
+        node: process.env.NODE_ENV
+    })
+})
+
+app.get('/caka3', (req, res) => {
+    res.json({
+        msg: 'Hola3 mundo',
+        port: process.env.PORT,
+        node: process.env.NODE_ENV
+    })
+})
+
 app.use(require('./routes/usuario'))
 
 
